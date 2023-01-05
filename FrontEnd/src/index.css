@@ -235,14 +235,14 @@ nav {
 }
 
 .home {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   height: 100vh;
   background-color: rgb(156, 253, 253);
 }
 
 .projects {
   background-color: aqua;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
@@ -251,7 +251,7 @@ nav {
 }
 
 .contact {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
