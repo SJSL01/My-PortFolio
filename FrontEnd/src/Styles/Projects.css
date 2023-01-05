@@ -1,0 +1,87 @@
+.project-card {
+    height: 30vh;
+    width: 30vh;
+    background-color: black;
+    transition: 1s;
+}
+
+.project-card:nth-child(even) {
+    transition: 1s;
+    animation: dance 20s infinite;
+}
+
+.project-card:nth-child(odd) {
+    transition: 1s;
+    animation: dance 30s infinite;
+}
+
+.project-card:hover {
+    transition: 1s;
+    scale: 1.1;
+}
+
+.project-card:not(:hover) {
+    opacity: 0.5;
+}
+
+@keyframes dance {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(5vh);
+    }
+
+    50% {
+        transform: translateY(-5vh);
+    }
+
+    75% {
+        transform: translateY(5vh);
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+
+
+}
+
+@media only screen and (width<=900px) {
+    .project-card{
+        height: 20vh;
+        width: 20vh;
+    }
+}
+@media only screen and (width<=600px) {
+    .project-card{
+        height: 15vh;
+        width: 15vh;
+    }
+    @keyframes dance {
+        0% {
+            transform: translateY(0);
+        }
+    
+        25% {
+            transform: translateY(5vh);
+        }
+    
+        50% {
+            transform: translateY(-5vh);
+        }
+    
+        75% {
+            transform: translateY(5vh);
+        }
+    
+        100% {
+            transform: translateY(0);
+    
+        }
+    
+    
+    }
+}

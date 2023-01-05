@@ -1,0 +1,96 @@
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: orchid; */
+    height: 100%;
+}
+
+.left-contact {
+    font-size: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(157, 247, 39);
+}
+
+form {
+    padding: 2vh;
+    box-shadow: 5px 1px 10px black;
+    border-radius: 20px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form div {
+    font-size: 3vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+form div:nth-child(4) {
+    align-items: center;
+    flex-direction: column;
+}
+
+form div input {
+    border: 0;
+    border-radius: 10px;
+}
+
+
+form div:nth-child(4) textarea {
+    height: 15vh;
+    border: 0;
+    border-radius: 10px;
+    padding: 2px;
+    resize: none;
+    text-align: start;
+    margin-top: 2vh;
+    width: 80%;
+}
+
+form div:nth-child(5) {
+    display: flex;
+    justify-content: center;
+}
+
+form button {
+    cursor: pointer;
+    width: 50%;
+    border: 0;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 2vh 0;
+    box-shadow: 5px 5px 10px rgb(105, 105, 105);
+}
+
+
+.right-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: yellow;
+}
+
+
+@media only screen and (width<=600px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .right-contact {
+        visibility: hidden;
+        /* background-color: black; */
+        height: 0;
+    }
+
+    .left-contact {
+        font-size: 4vh;
+        height: 100%;
+    }
+}
