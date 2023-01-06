@@ -276,18 +276,9 @@ nav {
 }
 
 
-@media only screen and (width<=600px) and (hover:hover) {
+@media only screen and (width<=600px){
   .top-options div {
     font-size: 2vh;
-  }
-
-  .top-options div:hover {
-    cursor: pointer;
-    color: rgb(116, 200, 252);
-    height: 5vh;
-    border-bottom-left-radius: 20%;
-    padding: 5px;
-    transition: 0.5s;
   }
 
   .top-options div img {
