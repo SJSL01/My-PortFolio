@@ -198,6 +198,16 @@ nav {
   background-color: transparent;
 }
 
+.nav-links li button img {
+  height: 5vh;
+  width: 70%;
+}
+
+.nav-links li {
+  height: 5vh;
+  width: 10vh;
+}
+
 .top-options {
   /* background-color: gray; */
   position: fixed;
@@ -219,14 +229,6 @@ nav {
   width: 10%;
 }
 
-.top-options div:hover {
-  cursor: pointer;
-  color: rgb(116, 200, 252);
-  height: 10vh;
-  border-bottom-left-radius: 20%;
-  padding: 5px;
-  transition: 0.5s;
-}
 
 
 
@@ -259,7 +261,22 @@ nav {
   /* background-color: rgb(237, 176, 255); */
 }
 
-@media only screen and (width<=600px) {
+
+@media (hover: hover) {
+
+  .top-options div:hover {
+    cursor: pointer;
+    color: rgb(116, 200, 252);
+    height: 10vh;
+    border-bottom-left-radius: 20%;
+    padding: 5px;
+    transition: 0.5s;
+  }
+
+}
+
+
+@media only screen and (width<=600px) and (hover:hover) {
   .top-options div {
     font-size: 2vh;
   }

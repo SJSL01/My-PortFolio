@@ -42,12 +42,13 @@
     flex-direction: column;
     align-items: center;
 }
-.skills-container img{
+
+.skills-container img {
     width: 100%;
 }
 
 
-@media only screen and (width<=600px) {
+@media only screen and (width<=600px) and (hover:hover) {
     .home-container {
         flex-direction: column;
     }
@@ -59,6 +60,12 @@
     }
 
     .right .avatar {
-        width: 40%;
+        width: 50%;
+    }
+}
+
+@media only screen and (width<=450px) {
+    .right .avatar {
+        width: 70%;
     }
 }

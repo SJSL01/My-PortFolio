@@ -32,11 +32,13 @@ function App() {
           <li>
             <button onClick={() => { homeRef.current.scrollIntoView({ behavior: "smooth" }) }}>
               <img style={{ mixBlendMode: "color-burn" }} src={"./home.gif"} alt="" />
+              <span>Home</span>
             </button>
           </li>
           <li>
             <button onClick={() => { projectRef.current.scrollIntoView({ behavior: "smooth" }) }}>
               <img style={{ mixBlendMode: "color-burn" }} src={"./projects.gif"} alt="" />
+              <span>Projects</span>
             </button>
           </li>
           <li>
