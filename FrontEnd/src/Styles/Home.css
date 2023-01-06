@@ -1,7 +1,7 @@
 .home-container {
     display: flex;
     justify-content: space-around;
-    /* background-color: orchid; */
+    background:linear-gradient(to right, rgb(62, 62, 62),black);
     height: 100%;
 }
 
@@ -12,7 +12,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: cadetblue;
+    background: url("../../public/bg.jpg");
+    background-size: contain;
+    color: transparent;
+    -webkit-background-clip: text;
 }
 
 .right {
@@ -20,7 +23,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .right .avatar {
@@ -48,14 +51,15 @@
 }
 
 
-@media only screen and (width<=600px) and (hover:hover) {
+@media only screen and (width<=600px){
     .home-container {
         flex-direction: column;
+        background:linear-gradient(to bottom, rgb(62, 62, 62),black);
     }
 
     .right,
     .left {
-        font-size: 4vh;
+        font-size: 3.5vh;
         height: 50%;
     }
 

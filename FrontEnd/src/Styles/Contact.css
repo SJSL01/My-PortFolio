@@ -1,7 +1,7 @@
 .contact-container {
     display: flex;
     justify-content: space-around;
-    /* background-color: orchid; */
+    /* background: linear-gradient(to right, cyan,pink); */
     height: 100%;
 }
 
@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(157, 247, 39);
+    /* background-color: rgb(157, 247, 39); */
 }
 
 form {
@@ -74,7 +74,7 @@ form button {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 

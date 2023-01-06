@@ -154,6 +154,7 @@ body {
 
 .container {
   display: flex;
+  background:linear-gradient(to right, rgb(62, 62, 62),black);
 }
 
 
@@ -163,10 +164,11 @@ button {
 
 nav {
   position: sticky;
+  color: white;
   top: 0;
   left: 0;
-  /* background-color: rgb(111, 111, 111); */
-  /* background: linear-gradient(to bottom, rgba(77, 255, 249, 0.651), orchid); */
+  /* background:linear-gradient(to right, rgb(62, 62, 62), rgb(33, 33, 33)); */
+  box-shadow: 0px -5px 15px black;
   width: fit-content;
   height: 100vh;
   display: flex;
@@ -192,6 +194,7 @@ nav {
 }
 
 .nav-links li button {
+  color: white;
   cursor: pointer;
   border: 0;
   border-radius: 5px;
@@ -243,7 +246,7 @@ nav {
 }
 
 .projects {
-  background-color: aqua;
+  background:linear-gradient(to right, rgb(62, 62, 62),black);
   scroll-snap-align: start;
   height: 100vh;
   display: flex;
@@ -258,7 +261,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* background-color: rgb(237, 176, 255); */
+  background:linear-gradient(to right, rgb(62, 62, 62),black);
 }
 
 
@@ -276,9 +279,13 @@ nav {
 }
 
 
-@media only screen and (width<=600px){
+@media only screen and (width<=600px) {
   .top-options div {
     font-size: 2vh;
+  }
+
+  nav {
+    background: linear-gradient(to bottom, rgb(62, 62, 62), black);
   }
 
   .top-options div img {
