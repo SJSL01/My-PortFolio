@@ -73,30 +73,32 @@
     }
 
     #text {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
-    .right,
+    .right{
+        height: 30%;
+    }
     .left {
-        height: 50%;
+        height: 70%;
     }
 
     .skills-container {
-        font-size: 3vw;
+        font-size: 4vw;
         width: 50vw;
     }
 
     .description {
-        font-size: 2.8vw;
+        font-size: 3.5vw;
     }
 
     .right .avatar {
-        width: 50%;
+        width: 30%;
     }
 }
 
 @media only screen and (width<=450px) {
     .right .avatar {
-        width: 60%;
+        width: 40%;
     }
 }
