@@ -16,7 +16,16 @@ export default function Projects() {
                     </div>
                </div>
                <div className="project-card">
-                    1
+                    <div>LAUNDRY CART APP</div>
+                    <img src="./laundry.png" alt="" />
+                    <div className="project-links">
+                         <div onClick={() => { window.open("https://github.com/SJSL01/Laundry-Cart-MERN", "_blank") }}>
+                              Github
+                         </div>
+                         <div onClick={() => { window.open("https://laundry-cart-o2ud.onrender.com/", "_blank") }}>
+                              Website
+                         </div>
+                    </div>
                </div>
                <div className="project-card">
                     1

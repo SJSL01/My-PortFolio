@@ -1,7 +1,7 @@
 .home-container {
     display: flex;
     justify-content: space-around;
-    background:linear-gradient(to right, rgb(62, 62, 62),black);
+    background: linear-gradient(to right, rgb(62, 62, 62), black);
     height: 100%;
 }
 
@@ -18,8 +18,13 @@
     -webkit-background-clip: text;
 }
 
+#text {
+    font-size: 2.5vw;
+}
+
 .right {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -37,8 +42,16 @@
     width: 100%;
 }
 
+.description {
+    width: 80%;
+    text-align: justify;
+    font-size: 1.5vw;
+
+}
+
 .skills-container {
-    font-size: 3vh;
+    font-size: 1.5rem;
+    font-weight: bold;
     width: 60%;
     /* border: 1px solid black; */
     display: flex;
@@ -51,16 +64,27 @@
 }
 
 
-@media only screen and (width<=600px){
+@media only screen and (width<=600px) {
     .home-container {
         flex-direction: column;
-        background:linear-gradient(to bottom, rgb(62, 62, 62),black);
+        background: linear-gradient(to bottom, rgb(62, 62, 62), black);
     }
+
+
 
     .right,
     .left {
-        font-size: 3.5vh;
         height: 50%;
+    }
+
+    .skills-container {
+        font-size: 0.5rem;
+        width: 50vw;
+    }
+
+
+    .description {
+        font-size: 0.7rem;
     }
 
     .right .avatar {

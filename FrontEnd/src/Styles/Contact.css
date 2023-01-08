@@ -1,7 +1,6 @@
 .contact-container {
     display: flex;
     justify-content: space-around;
-    /* background: linear-gradient(to right, cyan,pink); */
     height: 100%;
 }
 
@@ -16,8 +15,12 @@
 }
 
 form {
+    background: url("../../public/bg.jpg");
+    background-clip: text;
+    background-size: contain;
+    color: transparent;
     padding: 2vh;
-    box-shadow: 5px 1px 10px black;
+    box-shadow: 1px 1px 100px rgba(255, 255, 255, 0.623);
     border-radius: 20px;
     height: 60vh;
     display: flex;
@@ -29,6 +32,7 @@ form div {
     font-size: 3vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 form div:nth-child(4) {
@@ -38,7 +42,8 @@ form div:nth-child(4) {
 
 form div input {
     border: 0;
-    border-radius: 10px;
+    height: 110%;
+    border-radius: 10%;
 }
 
 
@@ -65,7 +70,8 @@ form button {
     border-radius: 20px;
     height: fit-content;
     padding: 2vh 0;
-    box-shadow: 5px 5px 10px rgb(105, 105, 105);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -81,6 +87,10 @@ form button {
 @media only screen and (width<=600px) {
     .contact-container {
         flex-direction: column;
+    }
+
+    form div {
+        font-size: 3vw;
     }
 
     .right-contact {

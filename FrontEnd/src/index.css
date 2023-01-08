@@ -154,7 +154,7 @@ body {
 
 .container {
   display: flex;
-  background:linear-gradient(to right, rgb(62, 62, 62),black);
+  background: linear-gradient(to right, rgb(62, 62, 62), black);
 }
 
 
@@ -175,6 +175,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  font-weight: 200;
 
 }
 
@@ -184,6 +185,11 @@ nav {
   /* height: 20%; */
 }
 
+.nav-logo li {
+  writing-mode: vertical-rl;
+  text-orientation:upright;
+}
+
 .nav-links {
   height: 100%;
   /* background-color: aqua; */
@@ -191,6 +197,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  
 }
 
 .nav-links li button {
@@ -199,6 +206,7 @@ nav {
   border: 0;
   border-radius: 5px;
   background-color: transparent;
+  
 }
 
 .nav-links li button img {
@@ -211,13 +219,16 @@ nav {
   width: 10vh;
 }
 
+
 .top-options {
   /* background-color: gray; */
+  color: white;
   position: fixed;
   top: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
+  font-weight: 200;
 }
 
 .top-options div {
@@ -233,8 +244,6 @@ nav {
 }
 
 
-
-
 .main {
   width: 100%;
 }
@@ -243,16 +252,18 @@ nav {
   scroll-snap-align: start;
   height: 100vh;
   background-color: rgb(156, 253, 253);
+  font-weight: 300;
 }
 
 .projects {
-  background:linear-gradient(to right, rgb(62, 62, 62),black);
+  background: linear-gradient(to right, rgb(62, 62, 62), black);
   scroll-snap-align: start;
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  font-weight: 300;
 }
 
 .contact {
@@ -261,7 +272,8 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background:linear-gradient(to right, rgb(62, 62, 62),black);
+  background: linear-gradient(to right, rgb(62, 62, 62), black);
+  font-weight: 300;
 }
 
 
@@ -281,8 +293,9 @@ nav {
 
 @media only screen and (width<=600px) {
   .top-options div {
-    font-size: 2vh;
+    font-size: 2vw;
   }
+
 
   nav {
     background: linear-gradient(to bottom, rgb(62, 62, 62), black);
@@ -290,5 +303,9 @@ nav {
 
   .top-options div img {
     height: 100%;
+  }
+
+  .contact{
+    background: linear-gradient(to bottom, rgb(62, 62, 62), black);
   }
 }

@@ -33,11 +33,11 @@ export default function Contact() {
           <h2 style={{ margin: "0 auto" }}>Contact ME</h2>
           <div>
             <label htmlFor="email">Email</label>
-            <input onChange={(e) => { handleInput(e) }} value={contactInfo.email} type="text" id="email" name="email" />
+            <input placeholder="Email" onChange={(e) => { handleInput(e) }} value={contactInfo.email} type="text" id="email" name="email" />
           </div>
           <div>
             <label htmlFor="name">Name</label>
-            <input onChange={(e) => { handleInput(e) }} value={contactInfo.name} type="text" id="name" name="name" />
+            <input placeholder="Name" onChange={(e) => { handleInput(e) }} value={contactInfo.name} type="text" id="name" name="name" />
           </div>
           <div>
             <label htmlFor="name">Message</label>
@@ -46,7 +46,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <button onClick={(e) => { handleSubmit(e) }} type="submit">SEND MESSAGE</button>
+            <button onClick={(e) => { handleSubmit(e) }} type="submit">SEND</button>
           </div>
         </form>
       </div>

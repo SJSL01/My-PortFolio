@@ -1,7 +1,8 @@
 .project-card {
+    border-radius: 20px;
     height: 30vh;
     width: 30vh;
-    background: linear-gradient(to right, rgb(62, 62, 62), orchid);
+    background: linear-gradient(135deg, rgb(141, 141, 141), rgb(255, 255, 255));
     transition: 1s;
     display: flex;
     flex-direction: column;
@@ -45,8 +46,7 @@
     .project-links div:hover {
         transition: 0.5s;
         font-weight: bolder;
-        color: hotpink;
-        text-shadow: 1px 1px rgb(0, 0, 0);
+        color: rgb(0, 0, 0)
     }
 }
 
@@ -86,9 +86,14 @@
 }
 
 @media only screen and (width<=600px) {
+    .projects{
+        background: linear-gradient(to bottom, rgb(62, 62, 62), black);
+    }
+    
     .project-card {
         height: 15vh;
         width: 15vh;
+        font-size: 0.5em;
     }
 
     @keyframes dance {
