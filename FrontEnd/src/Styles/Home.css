@@ -72,7 +72,9 @@
         background: linear-gradient(to bottom, rgb(62, 62, 62), black);
     }
 
-
+    #text {
+        font-size: 4vw;
+    }
 
     .right,
     .left {
@@ -80,12 +82,12 @@
     }
 
     .skills-container {
-        font-size: 2vw;
+        font-size: 3vw;
         width: 50vw;
     }
 
     .description {
-        font-size: 1.9vw;
+        font-size: 2.8vw;
     }
 
     .right .avatar {

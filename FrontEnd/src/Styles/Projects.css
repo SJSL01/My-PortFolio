@@ -82,18 +82,18 @@
     .project-card {
         height: 20vh;
         width: 20vh;
+        font-size: 1.5vw;
     }
 }
 
 @media only screen and (width<=600px) {
-    .projects{
+    .projects {
         background: linear-gradient(to bottom, rgb(62, 62, 62), black);
     }
-    
+
     .project-card {
         height: 15vh;
         width: 15vh;
-        font-size: 0.5em;
     }
 
     @keyframes dance {
