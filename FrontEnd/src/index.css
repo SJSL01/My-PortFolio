@@ -180,6 +180,7 @@ nav {
 }
 
 .nav-logo {
+  cursor: pointer;
   margin-top: 5vh;
   justify-self: flex-start;
   /* height: 20%; */
@@ -187,7 +188,7 @@ nav {
 
 .nav-logo li {
   writing-mode: vertical-rl;
-  text-orientation:upright;
+  text-orientation: upright;
 }
 
 .nav-links {
@@ -197,7 +198,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  
+
 }
 
 .nav-links li button {
@@ -206,7 +207,7 @@ nav {
   border: 0;
   border-radius: 5px;
   background-color: transparent;
-  
+
 }
 
 .nav-links li button img {
@@ -305,7 +306,7 @@ nav {
     height: 100%;
   }
 
-  .contact{
+  .contact {
     background: linear-gradient(to bottom, rgb(62, 62, 62), black);
   }
 }

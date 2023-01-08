@@ -6,6 +6,7 @@ import "./index.css"
 
 function App() {
 
+
   const homeRef = useRef()
   const projectRef = useRef()
   const contactRef = useRef()

@@ -19,7 +19,7 @@
 }
 
 #text {
-    font-size: 2.5vw;
+    font-size: 3.2vw;
 }
 
 .right {
@@ -45,13 +45,15 @@
 .description {
     width: 80%;
     text-align: justify;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+    font-weight: 300;
 
 }
 
 .skills-container {
+    height: 100bh;
+    justify-self: flex-end;
     font-size: 1.5rem;
-    font-weight: bold;
     width: 60%;
     /* border: 1px solid black; */
     display: flex;
@@ -78,13 +80,12 @@
     }
 
     .skills-container {
-        font-size: 0.5rem;
+        font-size: 2vw;
         width: 50vw;
     }
 
-
     .description {
-        font-size: 0.7rem;
+        font-size: 1.9vw;
     }
 
     .right .avatar {
@@ -94,6 +95,6 @@
 
 @media only screen and (width<=450px) {
     .right .avatar {
-        width: 70%;
+        width: 60%;
     }
 }
