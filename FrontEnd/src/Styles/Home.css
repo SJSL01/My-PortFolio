@@ -5,6 +5,10 @@
     height: 100%;
 }
 
+.light {
+    background: linear-gradient(to right, rgb(216, 216, 216), rgb(255, 255, 255));
+}
+
 .left {
     font-size: 5vh;
     width: 100%;

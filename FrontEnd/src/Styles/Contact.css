@@ -43,7 +43,7 @@ form div:nth-child(4) {
 form div input {
     border: 0;
     height: 110%;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 
 
@@ -87,6 +87,10 @@ form button {
 @media only screen and (width<=600px) {
     .contact-container {
         flex-direction: column;
+    }
+
+    form{
+        height: 70vh;
     }
 
     form div {
