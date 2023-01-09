@@ -45,7 +45,7 @@
 .description {
     width: 80%;
     text-align: justify;
-    font-size: 1.3vw;
+    font-size: 60%;
     font-weight: 300;
 
 }
@@ -66,6 +66,12 @@
 }
 
 
+@media only screen and (width<=900px) {
+    .description {
+        font-size: 50%;
+    }
+}
+
 @media only screen and (width<=600px) {
     .home-container {
         flex-direction: column;
@@ -79,7 +85,6 @@
     .right {
         margin-top: 5vh;
         justify-content: start;
-        /* background-color: aqua; */
         height: 30%;
     }
 
@@ -88,12 +93,12 @@
     }
 
     .skills-container {
-        font-size: 4vw;
+        font-size: 32%;
         width: 50vw;
     }
 
     .description {
-        font-size: 30%;
+        font-size: 35%;
     }
 
     .right .avatar {
