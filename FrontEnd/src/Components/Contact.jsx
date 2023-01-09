@@ -40,12 +40,12 @@ export default function Contact() {
 
         gutter={8}
         toastOptions={{
-      
-            duration: 1000,
-            style: {
-              background: '#000000',
-              color: '#fff',
-            },
+
+          duration: 1000,
+          style: {
+            background: '#000000',
+            color: '#fff',
+          },
         }}
       />
       <div className="left-contact">

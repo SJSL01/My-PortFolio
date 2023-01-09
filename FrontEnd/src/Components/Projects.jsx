@@ -16,7 +16,7 @@ export default function Projects() {
                     </div>
                </div>
                <div className="project-card">
-                    <div>LAUNDRY CART APP</div>
+                    <div>LAUNDRY CART</div>
                     <img src="./laundry.png" alt="" />
                     <div className="project-links">
                          <div onClick={() => { window.open("https://github.com/SJSL01/Laundry-Cart-MERN", "_blank") }}>

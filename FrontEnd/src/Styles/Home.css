@@ -76,9 +76,13 @@
         font-size: 5vw;
     }
 
-    .right{
+    .right {
+        margin-top: 5vh;
+        justify-content: start;
+        /* background-color: aqua; */
         height: 30%;
     }
+
     .left {
         height: 70%;
     }
@@ -89,7 +93,7 @@
     }
 
     .description {
-        font-size: 3.5vw;
+        font-size: 30%;
     }
 
     .right .avatar {
