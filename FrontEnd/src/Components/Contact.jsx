@@ -20,7 +20,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     if (contactInfo.email.length === 0 || contactInfo.name.length === 0 || contactInfo.message.length === 0) {
-      return toast.error("Empty values nat allowed")
+      return toast.error("Please write something")
     }
     try {
       await axios.post("https://myportfolio-nodemailer.onrender.com/contact", contactInfo)
@@ -52,17 +52,16 @@ export default function Contact() {
       />
       <div className="left-contact">
         <form>
-          <h2 style={{ margin: "0 auto" }}>Contact ME</h2>
+          <h2 style={{ color: "white", margin: "0 auto" }}>Contact ME</h2>
           <div>
-            <label htmlFor="email">Email</label>
+
             <input placeholder="Email" onChange={(e) => { handleInput(e) }} value={contactInfo.email} type="email" id="email" name="email" />
           </div>
           <div>
-            <label htmlFor="name">Name</label>
             <input placeholder="Name" onChange={(e) => { handleInput(e) }} value={contactInfo.name} type="text" id="name" name="name" />
           </div>
           <div >
-            <label htmlFor="name">Message</label>
+
             <textarea onChange={(e) => { handleInput(e) }}
               value={contactInfo.message} type="text" name="message" />
           </div>
